@@ -1,0 +1,131 @@
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+.sidebar-toggle:hover {
+  background: #0056b3;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #007bff, #0056b3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  padding: 20px;
+  
+  /* Enable scrolling */
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent; /* Firefox */
+}
+
+/* Custom Scrollbar for Chrome, Edge, Safari */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+  font-weight: bold;
+}
+
+.close-icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.close-icon:hover {
+  color: #ffc107;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.profile-section p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Overlay Effect */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
